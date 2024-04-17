@@ -1,0 +1,1 @@
+from src.data.generators.x_instance.x_intance_generator import generate_x_instance
