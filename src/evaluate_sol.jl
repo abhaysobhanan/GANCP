@@ -16,7 +16,7 @@ from src.dgl.get_graph import get_knn_graph
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = Transformer(in_dim=4, latent_dim=128, n_layers=4).to(device)
-state_dict = torch.load($py_dir+'weights/model_step4.pt', 
+state_dict = torch.load(os.path.join($py_dir, 'weights', 'model_step4.pt'),
                         map_location=torch.device(device))
 model.load_state_dict(state_dict)
 model.eval()
