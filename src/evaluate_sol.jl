@@ -2,7 +2,7 @@ include("utils.jl")
 include("parameters.jl")
 using PyCall, Hygese
 
-py_dir = joinpath(@__DIR__, "..\\cvrp-cost-prediction\\")
+py_dir = joinpath(@__DIR__, "..", "cvrp-cost-prediction")
 # @show py_dir 
 
 py"""
