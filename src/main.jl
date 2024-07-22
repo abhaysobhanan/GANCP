@@ -23,10 +23,10 @@ function mdvrp_solve(instance::MDVRP_Instance; weights=[1.0,0.4], pop_limit=[30,
     #subpopulation becomes main population
     for generation = 1:generations  
         subpopulation = generate_subpopulation(instance, population, scores, pop_limit[1])
-        subcosts = batch_fitness_cost(instance, subpopulation)
-        diversities = diversity(subpopulation)
         infeasibilities, excess_demands = are_infeasibles(instance, subpopulation)
         subpopulation, infeasibilities, excess_demands = repair_infeasibles(instance, subpopulation, infeasibilities, excess_demands, prob_repair)
+        subcosts = batch_fitness_cost(instance, subpopulation)
+        diversities = diversity(subpopulation)
         sub_scores = fitness_scores(subcosts, diversities, weights[1], weights[2], excess_demands)
 
         #targeted mutations  
