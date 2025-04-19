@@ -9,10 +9,10 @@ If you use GANCP, please cite:
 @article{sobhanan2025genetic,
   title={Genetic Algorithms with Neural Cost Predictor for Solving Hierarchical Vehicle Routing Problems},
   author={Sobhanan, Abhay and Park, Junyoung and Park, Jinkyoo and Kwon, Changhyun},
-	doi = {10.1287/trsc.2023.0369},
+  doi = {10.1287/trsc.2023.0369},
   volumne = {59},
-	number = {2},
-	pages = {322-339},
+  number = {2},
+  pages = {322-339},
   journal={Transportation Science},
   year={2025}
 }
