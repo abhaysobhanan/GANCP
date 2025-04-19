@@ -6,11 +6,15 @@ GANCP, combined with the [HGS-CVRP solver](https://github.com/vidalt/HGS-CVRP) i
 This repository contains the code for solving large-scale Multi-Depot Vehicle Routing Problems in `Julia 1.7` using `PyCall` package to perform CVRP cost predictions using GNN implemented in `Python 3.9`. 
 If you use GANCP, please cite:
 ```bibtex
-@article{sobhanan2023genetic,
+@article{sobhanan2025genetic,
   title={Genetic Algorithms with Neural Cost Predictor for Solving Hierarchical Vehicle Routing Problems},
   author={Sobhanan, Abhay and Park, Junyoung and Park, Jinkyoo and Kwon, Changhyun},
-  journal={arXiv preprint arXiv:2310.14157},
-  year={2023}
+	doi = {10.1287/trsc.2023.0369},
+  volumne = {59},
+	number = {2},
+	pages = {322-339},
+  journal={Transportation Science},
+  year={2025}
 }
 ```
 
